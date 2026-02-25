@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OdontoGestión Pro</title>
@@ -44,6 +45,14 @@
 <body class="h-screen flex overflow-hidden">
 
     <!-- Pantalla de Login -->
+    <div class="g_id_signin"
+    data-type="standard"
+    data-size="large"
+    data-theme="outline"
+    data-text="sign_in_with"
+    data-shape="rect"
+    data-logo_alignment="left">
+</div>
     <div id="login-overlay" class="fixed inset-0 z-[100] flex items-center justify-center p-4 transition-opacity duration-500">
         <div class="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-md text-center space-y-6">
             <div class="flex justify-center text-blue-600">
@@ -55,6 +64,11 @@
             </div>
             
             <!-- Botón de Google -->
+            <div id="g_id_onload"
+    data-client_id="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"
+    data-login_uri="https://jesusmonsalve2432-art.github.io/odontopro/"
+    data-auto_prompt="false">
+</div>
             <div class="flex justify-center">
                 <div id="g_id_onload"
                      data-client_id="TU_CLIENT_ID_DE_GOOGLE.apps.googleusercontent.com"
@@ -540,4 +554,5 @@
         };
     </script>
 </body>
+
 </html>
